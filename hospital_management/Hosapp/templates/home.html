@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <title>Homepage</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand mx-auto" href="#">HOSPITAL MANAGEMENT SYSTEM</a>
+        </nav>
+</header>
+
+<div class="container" id="buttons">
+    <button class="btn btn-color"><a href="{% url 'reg_view' %}">REGISTER PATIENT</a></button>
+    <br>
+    <button class="btn btn-color"><a href="{% url 'doc_view' %}">ADD DOCTORS</a></button>
+    <br>
+    <button class="btn btn-color"><a href="{% url 'list_view' %}">VIEW PATIENTS</a></button>
+    <br>
+    <button class="btn btn-color"><a href="{% url 'doclist_view' %}">VIEW DOCTOES</a></button>
+</div>
+</body>
+</html>

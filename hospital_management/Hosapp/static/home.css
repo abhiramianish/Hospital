@@ -1,0 +1,32 @@
+nav .navbar-brand {
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: rgb(246, 246, 234);
+}
+
+.btn-color {
+    background-color: rgb(56, 68, 232);
+    color: #fff;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#buttons {
+    margin-top: 50px;
+}
+
+button {
+    margin-top: 50px;
+    width: 50%;
+}
+
+.container {
+    text-align: center;
+}
